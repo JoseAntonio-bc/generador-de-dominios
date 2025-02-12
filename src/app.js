@@ -1,11 +1,14 @@
-import "bootstrap";
-import "./style.css";
+let pronoun = ['the', 'our'];
+let adj = ['great', 'big'];
+let noun = ['jogger', 'racoon'];
 
+let todasLasCombinaciones = [];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+for (let element1 of pronoun) {
+  for (let element2 of adj) {
+    for (let element3 of noun) {
+      todasLasCombinaciones.push(element1 + element2 + element3 + ".com")
+    }
+  }
+}
+console.log(todasLasCombinaciones);
